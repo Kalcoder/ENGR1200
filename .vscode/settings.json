@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.celeste": "yaml",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "numbers": "cpp"
     }
 }
