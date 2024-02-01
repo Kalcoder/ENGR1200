@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "*.celeste": "yaml",
-        "iostream": "cpp"
-    }
-}
