@@ -2,9 +2,10 @@
 #include <iomanip>
 #include <iostream>
 
-#define COFFEE_PRICE 4.99
-#define DONUT_PRICE 1.99
-#define TAX 0.13
+#define COFFEE_PRICE 4.99 // Price of a cup of coffee
+#define DONUT_PRICE 1.99  // Price of a donut
+#define TAX 0.13          // Cost of HST (independant tax calculation)
+#define TAX_INCL 1.13     // Cost including HST (grand total calculations)
 
 using namespace std;
 
@@ -29,7 +30,7 @@ int main() {
   // add 3 more columns for decimal point and two precision.
   // The sole reason this exists is to ensure the dollar sign is consistently
   // aligned properly and in a way that makes sense on the receipt.
-  int width = ceil(log10((coffeeTotal + donutTotal) * (TAX + 1))) + 3;
+  int width = ceil(log10((coffeeTotal + donutTotal) * TAX_INCL)) + 3;
 
   cout << "Jim Hortons" << endl;
   cout << "Customer Receipt" << endl;
@@ -45,7 +46,7 @@ int main() {
        << (coffeeTotal + donutTotal) * TAX << endl;
   cout << endl;
   cout << "Total\t\t\t$" << fixed << setprecision(2) << right << setw(width)
-       << (coffeeTotal + donutTotal) * (TAX + 1) << endl;
+       << (coffeeTotal + donutTotal) * TAX_INCL << endl;
 
   return 0;
 }
