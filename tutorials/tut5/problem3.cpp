@@ -16,6 +16,7 @@ int main() {
   return 0;
 }
 
+// Calculate the max load of a rectangular beam
 double maxLoad(double length, double width, double height, double maxStress) {
   return (maxStress * ((width * pow(height, 3)) / 12)) /
          (length * 0.5 * height);
