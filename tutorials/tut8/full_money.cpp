@@ -2,12 +2,17 @@
 #include <iostream>
 
 using namespace std;
-#define get_digits(value) ceil(log10(value))
 
+// String representations for ones digits
+// Don't bother fully printing zero, it won't be used
 string ones[] = {"",     "one", "two",   "three", "four",
                  "five", "six", "seven", "eight", "nine"};
+// String representations for numbers 10 through 19
+// gotta love english being weird with these numbers
 string teens[] = {"ten",     "eleven",  "twelve",    "thirteen", "fourteen",
                   "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+// String representations for tens digits
+// There's no word for a 0 in the tens digits, and ten is already covered above.
 string tens[] = {"",      "",      "twenty",  "thirty", "fourty",
                  "fifty", "sixty", "seventy", "eighty", "ninety"};
 
