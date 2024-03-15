@@ -19,7 +19,7 @@ string tens[] = {"",      "",      "twenty",  "thirty", "fourty",
 // Use recursion to only require cases for each set of 10^3
 // shoutouts to the teens being weirdly named in english making this far more
 // difficult than it ever needed to be
-string num_to_english(int num) {
+string num_to_english(int num) { // NOLINT(*-no-recursion)
   // Program only needs to support < 1 million
   if (num < 10) { // 0 - 9
     return ones[num];
@@ -49,7 +49,7 @@ int main() {
   whole_text = num_to_english(floor(value));
 
   // Extract decimal part
-  int decimal = value * 1e2 - floor(value) * 1e2;
+  int decimal = value * 1e2 - floor(value) * 1e2; // NOLINT(*-narrowing-conversions)
   string decimal_text = num_to_english(decimal);
 
   cout << whole_text << " dollars and " << decimal_text << " cents." << endl;

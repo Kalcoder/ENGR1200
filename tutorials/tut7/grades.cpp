@@ -6,9 +6,8 @@ using namespace std;
 
 int main() {
   int min_grade = 100, max_grade = 0;
-  int grade_count;
-  int grade_total;
-  double average;
+  int grade_count = 0;
+  int grade_total = 0;
   int current_grade = 0;
 
   while (true) {

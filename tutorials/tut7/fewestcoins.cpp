@@ -11,7 +11,7 @@ int main() {
   int penny_count;
 
   double price = 0.0;
-  double running_total = 0.0;
+  double running_total;
 
   cout << "Please enter the price to split into coins: " << endl;
   cin >> price;
@@ -28,7 +28,6 @@ int main() {
   nickel_count = running_total / 0.05;
   running_total -= nickel_count * 0.05;
   penny_count = running_total / 0.01;
-  running_total -= penny_count * 0.01;
 
   cout
       << "The fewest coins needed to split $" << price << " is: \n"

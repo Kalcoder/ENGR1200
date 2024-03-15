@@ -4,7 +4,7 @@
 
 #define COFFEE_PRICE 4.99 // Price of a cup of coffee
 #define DONUT_PRICE 1.99  // Price of a donut
-#define TAX 0.13          // Cost of HST (independant tax calculation)
+#define TAX 0.13          // Cost of HST (independent tax calculation)
 #define TAX_INCL 1.13     // Cost including HST (grand total calculations)
 
 using namespace std;
@@ -13,8 +13,8 @@ int main() {
   int coffee = 0;
   int donuts = 0;
 
-  double coffeeTotal = 0;
-  double donutTotal = 0;
+  double coffeeTotal;
+  double donutTotal;
 
   cout << "How many cups of coffee would you like to purchase ($4.99 each): ";
   cin >> coffee;

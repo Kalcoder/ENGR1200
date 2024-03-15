@@ -7,7 +7,7 @@ int main() {
   cout << "Please enter the number you would like to find primes up to: ";
   cin >> highest_num;
 
-  bool prime = true;
+  bool prime;
 
   for (int i = 1; i <= highest_num; i++) {
     prime = true;
