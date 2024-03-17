@@ -8,7 +8,7 @@ int main() {
   cout << "Please enter the length of the base of the triangle (in inches): ";
   cin >> base;
 
-  cout << "Please enter the lenght of the height of the triangle (in inches): ";
+  cout << "Please enter the length of the height of the triangle (in inches): ";
   cin >> height;
 
   cout << "The area of the triangle is " << 0.5 * base * height << " inches"

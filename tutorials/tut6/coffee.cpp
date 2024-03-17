@@ -12,7 +12,7 @@ int main() {
 
   // Variables for handling user input
   string rawSelection = "";
-  int selection = -1;
+  int selection;
 
   // Start a loop that can only be broken out of if the input is valid
   while (true) {

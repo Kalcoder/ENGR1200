@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <numbers>
 
 struct Point {
     double x;
